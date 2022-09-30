@@ -36,7 +36,7 @@ h1{
     100% {opacity: 1;}
 }
 .img{
-    max-width: 300px;
+    width: 300px;
     border-radius: 5px;
     animation-name: img;
     animation-duration: 5s;
@@ -101,6 +101,9 @@ footer{
     margin-top: 180px;
 }
 @media all and (max-width:50em) {
+    body{
+        object-fit: cover;
+    }
     .section-one {
         display: block;
     }  
@@ -125,4 +128,15 @@ footer{
         color: black;
     }
    
+}
+@media all and (max-width:500px){
+    body{
+        margin: 0;
+        padding: 0;
+        margin-right: -70px;
+    }
+    .img{
+        display: none;
+    }
+    
 }
